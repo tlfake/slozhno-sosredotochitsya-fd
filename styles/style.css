@@ -300,6 +300,10 @@
   .content__section-cards {
     grid-column: 2 / -1;
   }
+  
+  .content__section:nth-of-type(2) .content__section-cards {
+    grid-column: 1 / -1;
+  }
 
   .gallery {
     grid-template-columns: repeat(3, 1fr);
@@ -382,6 +386,7 @@
 
   .content__section:nth-of-type(2) .content__section-cards {
     display: grid;
+    grid-column: 1 / -1; /* span full width under the title */
     grid-template-columns: repeat(3, 1fr);
   }
 
