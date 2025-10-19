@@ -165,13 +165,16 @@
 }
 
 .card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
+  min-height: 100%;
 }
 
 .card__title {
   font-size: 18px;
   line-height: 1.3;
+  margin: 0;
 }
 
 .card__title_thin {
@@ -180,6 +183,8 @@
 
 .card__text {
   line-height: 1.3;
+  margin: 0;
+  flex: 1 1 auto;
 }
 
 .card__link {
@@ -303,6 +308,10 @@
   
   .content__section:nth-of-type(2) .content__section-cards {
     grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
   }
 
   .gallery {
@@ -386,8 +395,10 @@
 
   .content__section:nth-of-type(2) .content__section-cards {
     display: grid;
-    grid-column: 1 / -1; /* span full width under the title */
-    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
   }
 
   .content__section:nth-of-type(3) {
