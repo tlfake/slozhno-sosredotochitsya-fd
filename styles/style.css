@@ -237,10 +237,6 @@
   min-block-size: 668px;
   block-size: 100vh;
   padding: var(--main-gap);
-  background-image: var(--bg-image);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .footer__title {
