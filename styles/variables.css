@@ -2,3 +2,29 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Цвета для тёмной темы (основная) */
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --header-title-shadow: #ff0070;
+  --section-title-color: #ff0070;
+  --card-title-bg: #ff0070;
+  --card-title-text: #000028;
+  --link-shadow-color: #ff0070;
+  --button-color: #ff0070;
+  --button-hover-border: rgba(255, 0, 112, 0.4);
+  --rec-color: #ff0070;
+  
+  /* Фоновое изображение */
+  --bg-image: url(../images/cover-image-dark.png);
+  
+  /* Шрифты */
+  --main-font: 'IBM Plex mono', monospace;
+  
+  /* Размеры и отступы */
+  --main-gap: 10px;
+  --section-gap: 20px;
+}
