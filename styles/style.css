@@ -267,12 +267,12 @@
   .header__theme-menu {
     grid-column: 1 / -1;
     justify-self: end;
-    align-self: start;
-    margin-block-start: 20px;
+    align-self: center;
+    margin-block-start: 0;
   }
 
   .header__theme-menu-list {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .header__title {
