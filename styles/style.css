@@ -210,17 +210,19 @@
 }
 
 .content__gallery-title {
-  margin-block-end: var(--main-gap);
+  margin: 0 0 var(--main-gap);
   font-size: 18px;
   line-height: 1.3;
 }
 
 .gallery {
   display: grid;
+  grid-template-columns: 1fr;
   gap: var(--main-gap);
 }
 
 .gallery__image {
+  display: block;
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
@@ -315,33 +317,33 @@
   }
 
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: dense;
+    gap: 20px;
   }
 
   .gallery__image_sunset {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    grid-column: span 2;
+    aspect-ratio: 16 / 6;
   }
 
   .gallery__image_ice-cream {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
+    grid-row: span 2;
+    aspect-ratio: 3 / 4;
   }
 
   .gallery__image_tape {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
+    grid-row: span 2;
+    aspect-ratio: 3 / 4;
   }
 
   .gallery__image_books {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    aspect-ratio: 1 / 1;
   }
 
   .gallery__image_street {
     grid-column: 2 / 4;
-    grid-row: 3 / 4;
+    aspect-ratio: 16 / 6;
   }
 
   .footer {
@@ -426,33 +428,33 @@
   }
 
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 260px 315px 428px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: dense;
+    gap: 20px;
   }
 
   .gallery__image_sunset {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-column: span 2;
+    aspect-ratio: 16 / 6;
   }
 
   .gallery__image_ice-cream {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
+    grid-row: span 2;
+    aspect-ratio: 3 / 4;
   }
 
   .gallery__image_tape {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
+    grid-row: span 2;
+    aspect-ratio: 3 / 4;
   }
 
   .gallery__image_books {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    aspect-ratio: 1 / 1;
   }
 
   .gallery__image_street {
     grid-column: 2 / 4;
-    grid-row: 3 / 4;
+    aspect-ratio: 16 / 6;
   }
 
   .footer {
