@@ -367,7 +367,7 @@
 /* Desktop */
 @media (width >= 1024px) {
   .header {
-    min-block-size: 768px;
+    block-size: 768px;
     padding: 20px;
   }
 
@@ -437,7 +437,7 @@
   .content__section:nth-of-type(3) .card article {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    /* gap: 10px; */
   }
 
   .gallery {
@@ -472,6 +472,6 @@
   }
 
   .footer {
-    min-block-size: 768px;
+    block-size: 768px;
   }
 }
