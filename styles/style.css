@@ -137,11 +137,11 @@
 
 /* Content */
 .content {
-  padding: 60px var(--main-gap);
+  padding: 40px var(--main-gap);
 }
 
 .content__section {
-  margin-block-end: 80px;
+  margin-block-end: 50px;
 }
 
 .content__section:last-of-type {
