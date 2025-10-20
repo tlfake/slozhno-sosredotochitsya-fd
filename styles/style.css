@@ -214,7 +214,7 @@
 
 /* Gallery */
 .content__gallery {
-  margin-block-start: 80px;
+  margin-block-start: 40px;
 }
 
 .content__gallery-title {
@@ -318,6 +318,10 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .content__gallery {
+    margin-block-start: 80px;
   }
 
   .gallery {
