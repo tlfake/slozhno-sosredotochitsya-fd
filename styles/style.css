@@ -261,8 +261,7 @@
   }
 
   .header {
-    min-block-size: 1024px;
-    block-size: 100vh;
+    block-size: 1024px;
     padding: 0 var(--main-gap);
   }
 
@@ -355,8 +354,7 @@
   }
 
   .footer {
-    min-block-size: 1024px;
-    block-size: 100vh;
+    block-size: 1024px;
   }
 
   .footer__title {
