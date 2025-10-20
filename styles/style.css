@@ -242,8 +242,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-block-size: 668px;
-  block-size: 100vh;
+  block-size: 668px;
   padding: var(--main-gap);
 }
 
@@ -357,6 +356,7 @@
 
   .footer {
     min-block-size: 1024px;
+    block-size: 100vh;
   }
 
   .footer__title {
