@@ -373,6 +373,10 @@
     margin: 0;
   }
 
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
   .header__title {
     grid-column: 1 / span 1;
     margin-inline-start: -20px;
