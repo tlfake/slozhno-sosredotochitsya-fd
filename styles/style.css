@@ -49,8 +49,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: start;
-  min-block-size: 668px;
-  block-size: 100vh;
+  block-size: 668px;
   padding: var(--main-gap);
   background-image: var(--bg-image);
   background-position: center;
@@ -264,6 +263,7 @@
 
   .header {
     min-block-size: 1024px;
+    block-size: 100vh;
     padding: 0 var(--main-gap);
   }
 
