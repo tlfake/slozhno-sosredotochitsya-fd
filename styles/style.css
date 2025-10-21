@@ -347,8 +347,13 @@
 }
 
 @media (768px <= width < 1024px) {
+  .header__theme-menu {
+    padding-block-start: 20px;
+  }
+
   .header__subtitle {
     max-inline-size: 364px;
+    margin-block-end: 20px;
   }
 }
 
