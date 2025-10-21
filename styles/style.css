@@ -325,7 +325,6 @@
 
   .gallery {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
     gap: 20px;
   }
 
@@ -436,7 +435,6 @@
 
   .gallery {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 260px 315px 428px;
     gap: 20px;
   }
 
