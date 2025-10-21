@@ -172,12 +172,8 @@
   min-height: 100%;
 }
 
-.card_nested {
+.content__section:nth-of-type(3) .card {
   gap: 20px;
-}
-
-.card__nested-item .card__title_thin {
-  margin-block-end: 10px;
 }
 
 .card__title {
@@ -188,6 +184,10 @@
 
 .card__title_thin {
   font-weight: normal;
+}
+
+.content__section:nth-of-type(3) .card article .card__title_thin {
+  margin-block-end: 10px;
 }
 
 .card__text {
@@ -299,12 +299,9 @@
 
   .content__section {
     display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: var(--section-gap);
     margin-block-end: 80px;
-  }
-
-  .content__section_columns {
-    grid-template-columns: 1fr 2fr;
   }
 
   .content__section-title {
@@ -315,7 +312,7 @@
     grid-column: 2 / -1;
   }
   
-  .content__section-cards_wide {
+  .content__section:nth-of-type(2) .content__section-cards {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr;
@@ -392,24 +389,48 @@
     gap: 20px;
   }
 
-  .content__section-cards_wide {
+  .content__section:nth-of-type(1) {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .content__section:nth-of-type(1) .content__section-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .content__section:nth-of-type(2) {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .content__section:nth-of-type(2) .content__section-cards {
+    display: grid;
+    grid-column: 1 / -1;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     align-items: stretch;
   }
 
-  .card_nested {
-    display: grid;
+  .content__section:nth-of-type(3) {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .content__section:nth-of-type(3) .content__section-cards {
     grid-template-columns: 1fr;
   }
 
-  .card_nested .card__title {
+  .content__section:nth-of-type(3) .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .content__section:nth-of-type(3) .card__title {
     margin-block-end: 0;
   }
 
-  .card__nested-item {
+  .content__section:nth-of-type(3) .card article {
     display: grid;
     grid-template-columns: 1fr;
+    /* gap: 10px; */
   }
 
   .gallery {
