@@ -3,6 +3,10 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: var(--main-font);
   font-size: 18px;
@@ -52,10 +56,6 @@
   block-size: 100vh;
   min-block-size: 668px;
   padding: var(--main-gap);
-  background-image: var(--bg-image);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .header__rec {
