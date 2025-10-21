@@ -186,8 +186,10 @@
   font-weight: normal;
 }
 
-.content__section_nested .card article .card__title_thin {
-  margin-block-end: 10px;
+.content__section_nested .card article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card__text {
@@ -398,10 +400,5 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-
-  .content__section_nested .card article {
-    display: grid;
-    grid-template-columns: 1fr;
   }
 }
