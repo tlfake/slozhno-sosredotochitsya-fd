@@ -401,7 +401,6 @@
   .card_nested {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 
   .card_nested .card__title {
